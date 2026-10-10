@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Espresso Perfetto Bar – Kaffee, Frühstück &amp; Kuchen in Düsseldorf-Friedrichstadt</title>
-  <meta name="description" content="Espresso Perfetto Bar an der Friedrichstraße 40a in Düsseldorf: italienisch geprägter Espresso, Latte Macchiato, Frühstück, Quiche und hausgemachter Kuchen. Täglich geöffnet.">
-  <meta name="theme-color" content="#a4531f">
+  <meta name="description" content="Espresso Perfetto Bar an der Friedrichstraße 40a in Düsseldorf: italienisch geprägter Espresso, Frühstück, Quiche, Cannoli und hausgemachter Kuchen. Täglich geöffnet.">
+  <meta name="theme-color" content="#23503b">
   <meta property="og:type" content="restaurant.restaurant">
   <meta property="og:locale" content="de_DE">
   <meta property="og:title" content="Espresso Perfetto Bar – Düsseldorf-Friedrichstadt">
   <meta property="og:description" content="Espresso, Frühstück und Kuchen an der Friedrichstraße 40a. Täglich geöffnet.">
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="style.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,324 +30,177 @@
   </script>
 </head>
 <body id="top">
-  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <!-- PROBE-HINWEIS: Leiste und Footer-Hinweis entfernen, sobald der Kunde die Seite übernimmt -->
+  <div class="probe">Entwurf von Nexuzo · unverbindliche Probewebsite für Espresso Perfetto Bar</div>
+  <div class="flag" aria-hidden="true"><i></i><i></i><i></i></div>
 
-  <!-- PROBE-HINWEIS: Entfernen, sobald die Seite zum Kunden übergeht (ganze Zeile + Footer-Hinweis unten) -->
-  <div class="probe-bar"><strong>Entwurf von Nexuzo</strong> – unverbindliche Probewebsite für Espresso Perfetto Bar</div>
-
-  <header class="nav" id="navigation">
-    <div class="nav__inner">
-      <a class="nav__logo" href="#top" aria-label="Espresso Perfetto Bar – Startseite">
-        <span class="nav__logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2v3M12 2v3"/></svg>
-        </span>
-        Espresso <span>Perfetto</span>
-      </a>
-      <div class="nav__actions">
-        <a class="btn btn--primary" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          Route
-        </a>
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+  <header class="nav">
+    <div class="nav__bar">
+      <nav class="nav__side nav__side--l" aria-label="Hauptmenü links">
+        <a href="#bar">Die Bar</a><a href="#karte">Karte</a><a href="#bilder">Bilder</a>
+      </nav>
+      <a class="logo" href="#top" aria-label="Espresso Perfetto Bar – Startseite"><span>Espresso</span><b>Perfetto</b><small>Bar · Düsseldorf</small></a>
+      <nav class="nav__side nav__side--r" aria-label="Hauptmenü rechts">
+        <a href="#wissen">Gut zu wissen</a><a href="#besuch">Besuch</a>
+      </nav>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span></button>
     </div>
-    <nav class="nav__menu" id="menu" aria-label="Hauptmenü">
-      <div class="nav__menu-inner">
-        <div class="nav__group">
-          <span class="nav__group-title">Die Bar</span>
-          <a href="#ueber-uns">Über uns</a>
-          <a href="#angebot">Kaffee &amp; Essen</a>
-          <a href="#impressionen">Impressionen</a>
-        </div>
-        <div class="nav__group">
-          <span class="nav__group-title">Besuch</span>
-          <a href="#bewertungen">Bewertungen</a>
-          <a href="#faq">Gut zu wissen</a>
-          <a href="#kontakt">Kontakt &amp; Öffnungszeiten</a>
-        </div>
-      </div>
-    </nav>
+    <div class="drawer" id="menu">
+      <a href="#bar">Die Bar</a><a href="#karte">Karte</a><a href="#bilder">Bilder</a><a href="#wissen">Gut zu wissen</a><a href="#besuch">Besuch &amp; Öffnungszeiten</a>
+    </div>
   </header>
 
   <main id="main">
-
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <!-- BILD ERSETZEN: Hero-Foto der Bar (Querformat, Empfehlung 1920x1080px) -> assets/photos/hero.jpg -->
-      <img class="hero__photo" src="assets/photos/hero.jpg" alt="Innenraum der Espresso Perfetto Bar an der Friedrichstraße" fetchpriority="high">
-      <div class="hero__bg"></div>
-      <div class="hero__inner">
-        <div class="hero__content">
-          <p class="hero__eyebrow">Café &amp; Espressobar · Friedrichstadt, Düsseldorf</p>
-          <h1 class="hero__title" id="hero-title">Dein Espresso an der Friedrichstraße</h1>
-          <p class="hero__sub">Italienisch geprägter Kaffee, Frühstück und hausgemachtes Gebäck – direkt an der Friedrichstraße 40a, zum Hierbleiben oder Mitnehmen.</p>
-          <div class="hero__meta">
-            <div class="hero__rating">
-              <span class="hero__stars" aria-hidden="true">★★★★★</span>
-              <span>4,8 von 5 · 459 Google-Bewertungen</span>
-            </div>
-            <div class="hero__status" data-open="">
-              <span class="hero__status-dot"></span>
-              <span class="hero__status-text">Öffnungszeiten werden geladen</span>
-            </div>
-          </div>
-          <div class="hero__actions">
-            <a class="btn btn--on-dark btn--lg" href="#angebot">Das gibt's bei uns</a>
-            <a class="btn btn--ghost btn--lg" href="#kontakt">Öffnungszeiten &amp; Anfahrt</a>
-          </div>
+    <section class="hero" aria-labelledby="h1">
+      <div class="hero__copy">
+        <p class="kicker">Friedrichstraße 40a · Düsseldorf</p>
+        <h1 id="h1">Un caffè,<br><em>per favore.</em></h1>
+        <p class="hero__lead">Italienisch geprägter Espresso, Frühstück bis in den Nachmittag und Cannoli zum Dessert. Zum Bleiben oder Mitnehmen.</p>
+        <div class="hero__row">
+          <div class="status" data-status><span class="status__dot"></span><span data-status-text>Öffnungszeiten werden geladen</span></div>
+          <p class="rating"><b>4,8</b> bei Google · 459 Bewertungen</p>
         </div>
-        <figure class="hero__card">
-          <!-- BILD ERSETZEN: Hochformat (4:5), z. B. Cappuccino oder Theke -> assets/photos/hero-hochformat.jpg -->
-          <div class="hero__card-frame photo-slot">
-            <img src="assets/photos/hero-hochformat.jpg" alt="Frisch zubereiteter Cappuccino in der Espresso Perfetto Bar">
-          </div>
-          <figcaption>Frisch aus der Siebträgermaschine</figcaption>
-        </figure>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#karte">Zur Karte</a>
+          <a class="btn btn--line" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">Route planen</a>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <img src="https://images.unsplash.com/photo-1707241358597-bafcc8a8e73d?auto=format&fit=crop&w=1100&h=1400&q=70" alt="Siebträgermaschine bei der Espresso-Zubereitung" fetchpriority="high" width="1100" height="1400">
+        <figcaption>Aus der Siebträgermaschine</figcaption>
+      </figure>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker__track"><span>Espresso</span><span>Cappuccino</span><span>Latte Macchiato</span><span>Cannoli</span><span>Quiche</span><span>Brunch</span><span>Matcha Latte</span><span>Hausgemachter Kuchen</span><span>Espresso</span><span>Cappuccino</span><span>Latte Macchiato</span><span>Cannoli</span><span>Quiche</span><span>Brunch</span><span>Matcha Latte</span><span>Hausgemachter Kuchen</span></div></div>
+
+    <section class="about" id="bar" aria-labelledby="about-h">
+      <div class="about__text reveal">
+        <p class="kicker">Die Bar</p>
+        <h2 id="about-h">Eine kleine Auszeit zwischen Friedrichstadt und Bilk</h2>
+        <p class="dropcap">Drinnen sitzt du am Fenster und siehst dem Viertel beim Vorbeigehen zu, draußen gibt es Plätze für sonnige Tage. Hinter der Theke stehen Baristas, die Espresso ernst nehmen und trotzdem freundlich bleiben, auch auf Englisch.</p>
+        <p>Dazu gibt es Frühstück, Quiche, Sandwiches und hausgemachten Kuchen. Kaffeebohnen kannst du zum Mitnehmen kaufen. Reservieren musst du nicht: einfach hereinkommen.</p>
+        <ul class="facts">
+          <li><b>0</b> Reservierungen nötig</li>
+          <li><b>WLAN</b> kostenlos</li>
+          <li><b>Hunde</b> willkommen</li>
+        </ul>
+      </div>
+      <div class="about__pics reveal">
+        <img class="about__a" src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&h=1100&q=70" alt="Café-Fenster mit Pflanzen und Tischen" loading="lazy" width="900" height="1100">
+        <img class="about__b" src="https://images.unsplash.com/photo-1704283735270-f973e7e9c14e?auto=format&fit=crop&w=700&h=700&q=70" alt="Croissants und eine Tasse auf dem Tisch" loading="lazy" width="700" height="700">
       </div>
     </section>
 
-    <!-- USP-LEISTE -->
-    <section class="usp" aria-label="Das macht uns aus">
-      <div class="usp__inner">
-        <div class="usp__item reveal-item">
-          <span class="usp__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2v3M12 2v3"/></svg></span>
-          <h3 class="usp__title">Kaffee mit Leidenschaft</h3>
-          <p class="usp__text">Espresso, Macchiato und Co. von Baristas, die ihr Handwerk lieben.</p>
+    <section class="menu" id="karte" aria-labelledby="menu-h">
+      <div class="menu__head reveal">
+        <p class="kicker">La Carta</p>
+        <h2 id="menu-h">Das bestellen Gäste am liebsten</h2>
+        <p>Eine Auswahl aus dem Angebot. Die aktuelle Karte mit allen Preisen hängt in der Bar.</p>
+      </div>
+      <!-- PREISE EINTRAGEN: pro <li> ein <span class="price"> ergänzen, sobald die Karte vorliegt. Bis dahin bewusst ohne Preise. -->
+      <div class="card reveal">
+        <div class="card__col">
+          <h3><span>Caffè</span><small>Kaffee</small></h3>
+          <ul><li>Espresso Macchiato</li><li>Latte Macchiato</li><li>Cappuccino</li><li>Matcha Latte mit Erdbeersirup</li><li>Kaffeebohnen zum Mitnehmen</li></ul>
         </div>
-        <div class="usp__item reveal-item">
-          <span class="usp__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg></span>
-          <h3 class="usp__title">Frühstück &amp; Brunch</h3>
-          <p class="usp__text">Quiche, Sandwiches und Süßes – vom frühen Morgen bis zum Nachmittag.</p>
+        <div class="card__col">
+          <h3><span>Colazione &amp; Salato</span><small>Frühstück &amp; Herzhaftes</small></h3>
+          <ul><li>Frühstück und Brunch</li><li>Quiche</li><li>Sandwiches mit Käse</li><li>Vegetarische Gerichte</li></ul>
         </div>
-        <div class="usp__item reveal-item">
-          <span class="usp__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-9 5-14 14-14 0 9-5 14-14 14z"/><path d="M5 19l8-8"/></svg></span>
-          <h3 class="usp__title">Viel Vegetarisches</h3>
-          <p class="usp__text">Eine große Auswahl an vegetarischen Gerichten neben den Klassikern.</p>
+        <div class="card__col">
+          <h3><span>Dolce</span><small>Süßes</small></h3>
+          <ul><li>Cannoli</li><li>Hausgemachter Kuchen</li><li>Nussriegel</li></ul>
         </div>
-        <div class="usp__item reveal-item">
-          <span class="usp__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/><path d="M2 9a14 14 0 0 1 20 0"/></svg></span>
-          <h3 class="usp__title">Gut zum Bleiben</h3>
-          <p class="usp__text">Kostenloses WLAN, Plätze am Fenster und draußen – Hunde sind willkommen.</p>
-        </div>
+      </div>
+      <p class="menu__note">Informationen zu Allergenen und Zusatzstoffen gibt es an der Theke. Änderungen am Angebot vorbehalten.</p>
+      <div class="menu__band">
+        <img src="https://images.unsplash.com/photo-1611292984550-6dd8def2e668?auto=format&fit=crop&w=900&h=600&q=70" alt="Cannoli mit Pistaziencreme" loading="lazy" width="900" height="600">
+        <img src="https://images.unsplash.com/photo-1654870032519-9db00597cd78?auto=format&fit=crop&w=900&h=600&q=70" alt="Cannoli mit Himbeeren" loading="lazy" width="900" height="600">
       </div>
     </section>
 
-    <!-- ÜBER UNS -->
-    <section class="about" id="ueber-uns" aria-labelledby="about-title">
-      <div class="about__inner">
-        <div class="about__media reveal-left">
-          <!-- BILD ERSETZEN: Theke, Team oder Gastraum (Hochformat 4:5) -> assets/photos/ueber-uns.jpg -->
-          <div class="about__photo photo-slot">
-            <img src="assets/photos/ueber-uns.jpg" alt="Theke und Siebträgermaschine in der Espresso Perfetto Bar">
-          </div>
-        </div>
-        <div class="about__text reveal-right">
-          <span class="section-eyebrow">Über uns</span>
-          <h2 id="about-title">Eine kleine Auszeit zwischen Friedrichstadt und Bilk</h2>
-          <p>Die Espresso Perfetto Bar liegt an der Friedrichstraße 40a. Drinnen sitzt du an hohen Fenstern und siehst dem Viertel beim Vorbeigehen zu, draußen gibt es Plätze für sonnige Tage. Die Einrichtung erinnert an alte Kaffeemaschinen und Espressokocher.</p>
-          <p>Hinter der Theke stehen Baristas, die Espresso ernst nehmen und trotzdem freundlich bleiben – auch auf Englisch. Dazu gibt es Frühstück, Quiche, Sandwiches und hausgemachten Kuchen. Kaffeebohnen kannst du für zuhause mitnehmen.</p>
-          <p>Espresso Perfetto prägt die Düsseldorfer Kaffeekultur seit 1999. Diese Bar ist eine kleine Adresse davon.</p>
-          <!-- HINWEIS an Mateo: Satz zu "seit 1999" bitte mit dem Inhaber abstimmen (Quelle: espressoperfetto.de). -->
-          <a class="btn btn--primary" href="#kontakt">Vorbeikommen</a>
-        </div>
+    <section class="strip" id="bilder" aria-labelledby="strip-h">
+      <div class="strip__head"><p class="kicker">Impressionen</p><h2 id="strip-h">Schau mal rein</h2></div>
+      <ul class="strip__track">
+<li class="strip__item"><button type="button" data-zoom aria-label="Bild vergrößern"><img src="https://images.unsplash.com/photo-1722556178887-45516bf7577c?auto=format&fit=crop&w=520&h=650&q=70" data-full="https://images.unsplash.com/photo-1722556178887-45516bf7577c?auto=format&fit=crop&w=1600&q=70" alt="Espresso in weißer Tasse auf Holztisch" loading="lazy" width="520" height="650"></button></li>
+<li class="strip__item"><button type="button" data-zoom aria-label="Bild vergrößern"><img src="https://images.unsplash.com/photo-1574282341541-0b3ed53adcd2?auto=format&fit=crop&w=520&h=650&q=70" data-full="https://images.unsplash.com/photo-1574282341541-0b3ed53adcd2?auto=format&fit=crop&w=1600&q=70" alt="Croissants und Cappuccino" loading="lazy" width="520" height="650"></button></li>
+<li class="strip__item"><button type="button" data-zoom aria-label="Bild vergrößern"><img src="https://images.unsplash.com/photo-1636476842112-fc4153b938bd?auto=format&fit=crop&w=520&h=650&q=70" data-full="https://images.unsplash.com/photo-1636476842112-fc4153b938bd?auto=format&fit=crop&w=1600&q=70" alt="Barista an der Theke" loading="lazy" width="520" height="650"></button></li>
+<li class="strip__item"><button type="button" data-zoom aria-label="Bild vergrößern"><img src="https://images.unsplash.com/photo-1583722126883-a15434ef7778?auto=format&fit=crop&w=520&h=650&q=70" data-full="https://images.unsplash.com/photo-1583722126883-a15434ef7778?auto=format&fit=crop&w=1600&q=70" alt="Gebäck und Kaffee" loading="lazy" width="520" height="650"></button></li>
+<li class="strip__item"><button type="button" data-zoom aria-label="Bild vergrößern"><img src="https://images.unsplash.com/photo-1455227237029-b105205b4f02?auto=format&fit=crop&w=520&h=650&q=70" data-full="https://images.unsplash.com/photo-1455227237029-b105205b4f02?auto=format&fit=crop&w=1600&q=70" alt="Tische vor dem Café" loading="lazy" width="520" height="650"></button></li>
+<li class="strip__item"><button type="button" data-zoom aria-label="Bild vergrößern"><img src="https://images.unsplash.com/photo-1648759312827-783d2a3abc72?auto=format&fit=crop&w=520&h=650&q=70" data-full="https://images.unsplash.com/photo-1648759312827-783d2a3abc72?auto=format&fit=crop&w=1600&q=70" alt="Cappuccino mit Milchschaum" loading="lazy" width="520" height="650"></button></li>
+<li class="strip__item"><button type="button" data-zoom aria-label="Bild vergrößern"><img src="https://images.unsplash.com/photo-1464306208223-e0b4495a5553?auto=format&fit=crop&w=520&h=650&q=70" data-full="https://images.unsplash.com/photo-1464306208223-e0b4495a5553?auto=format&fit=crop&w=1600&q=70" alt="Frühstückstisch" loading="lazy" width="520" height="650"></button></li>
+      </ul>
+      <!-- BILDER ERSETZEN: Platzhalterfotos von Unsplash. Echte Fotos der Bar: hier die src-Adressen austauschen. -->
+    </section>
+
+    <section class="score" aria-labelledby="score-h">
+      <div class="score__num reveal"><span>4,8</span><small>von 5 Sternen</small></div>
+      <div class="score__text reveal">
+        <h2 id="score-h">459 Gäste haben bei Google bewertet</h2>
+        <p>Gelobt werden vor allem der Espresso, die freundlichen Baristas, die saubere Bar und das Frühstück. Lies selbst nach, was andere schreiben.</p>
+        <a class="btn btn--paper" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">Bewertungen bei Google ansehen</a>
       </div>
     </section>
 
-    <!-- ANGEBOT -->
-    <section class="menu" id="angebot" aria-labelledby="menu-title">
-      <div class="menu__inner">
-        <div class="menu__header reveal-item">
-          <span class="section-eyebrow">Kaffee &amp; Essen</span>
-          <h2 class="section-title" id="menu-title">Das gibt's bei uns</h2>
-          <p class="section-lead">Eine Auswahl dessen, was Gäste bei uns am liebsten bestellen. Die aktuelle Karte mit allen Preisen hängt in der Bar.</p>
-        </div>
-        <!-- PREISE EINTRAGEN: Sobald Mateo die Karte hat, pro Eintrag <span class="menu__price"> ergänzen. Bis dahin bewusst ohne Preise. -->
-        <div class="menu__grid">
-          <article class="menu__card reveal-item">
-            <h3>Kaffee</h3>
-            <p>Italienisch geprägt, kräftig im Geschmack.</p>
-            <ul class="menu__list">
-              <li>Espresso Macchiato</li>
-              <li>Latte Macchiato</li>
-              <li>Cappuccino</li>
-              <li>Matcha Latte mit Erdbeersirup</li>
-            </ul>
-          </article>
-          <article class="menu__card reveal-item">
-            <h3>Frühstück &amp; Herzhaftes</h3>
-            <p>Für den Start in den Tag oder die Mittagspause.</p>
-            <ul class="menu__list">
-              <li>Frühstück und Brunch</li>
-              <li>Quiche</li>
-              <li>Sandwiches mit Käse</li>
-              <li>Vegetarische Gerichte</li>
-            </ul>
-          </article>
-          <article class="menu__card reveal-item">
-            <h3>Süßes</h3>
-            <p>Zum Kaffee oder einfach so zwischendurch.</p>
-            <ul class="menu__list">
-              <li>Cannoli</li>
-              <li>Hausgemachter Kuchen</li>
-              <li>Nussriegel</li>
-            </ul>
-          </article>
-        </div>
-        <p class="menu__note">Dazu: Kaffeebohnen zum Mitnehmen. Informationen zu Allergenen und Zusatzstoffen gibt es an der Theke. Änderungen am Angebot vorbehalten.</p>
-      </div>
+    <section class="know" id="wissen" aria-labelledby="know-h">
+      <h2 id="know-h" class="reveal">Gut zu wissen</h2>
+      <dl class="know__list">
+        <div class="reveal"><dt>Reservieren</dt><dd>Nicht nötig, die Bar nimmt keine Reservierungen an. Ein Platz findet sich meistens.</dd></div>
+        <div class="reveal"><dt>Arbeiten</dt><dd>Kostenloses WLAN. Viele Gäste kommen mit Laptop für ein, zwei konzentrierte Stunden.</dd></div>
+        <div class="reveal"><dt>Hunde</dt><dd>Hunde sind willkommen.</dd></div>
+        <div class="reveal"><dt>Sitzen</dt><dd>Plätze drinnen und draußen. Alles gibt es auch zum Mitnehmen.</dd></div>
+        <div class="reveal"><dt>Vegetarisch</dt><dd>Große Auswahl an vegetarischen Gerichten. Frag an der Theke nach dem Tagesangebot.</dd></div>
+      </dl>
     </section>
 
-    <!-- GALERIE -->
-    <section class="gallery" id="impressionen" aria-labelledby="gallery-title">
-      <div class="gallery__inner">
-        <div class="gallery__header reveal-item">
-          <span class="section-eyebrow">Impressionen</span>
-          <h2 class="section-title" id="gallery-title">Schau mal rein</h2>
-          <p class="section-lead">Ein paar Eindrücke aus der Bar und von der Theke. Zum Vergrößern einfach auf ein Bild tippen.</p>
-        </div>
-        <!-- BILDER ERSETZEN: assets/photos/galerie-1.jpg bis galerie-5.jpg. Fehlende Bilder zeigen automatisch das Kaffee-Muster. -->
-        <div class="gallery__grid">
-          <button class="gallery__tile gallery__tile--a photo-slot reveal-scale" type="button" aria-label="Bild vergrößern"><img src="assets/photos/galerie-1.jpg" alt="Gastraum der Espresso Perfetto Bar mit Fensterplätzen"></button>
-          <button class="gallery__tile gallery__tile--b photo-slot reveal-scale" type="button" aria-label="Bild vergrößern"><img src="assets/photos/galerie-2.jpg" alt="Latte Macchiato in hohem Glas"></button>
-          <button class="gallery__tile photo-slot reveal-scale" type="button" aria-label="Bild vergrößern"><img src="assets/photos/galerie-3.jpg" alt="Kuchen und Gebäck in der Auslage"></button>
-          <button class="gallery__tile photo-slot reveal-scale" type="button" aria-label="Bild vergrößern"><img src="assets/photos/galerie-4.jpg" alt="Kaffeebohnen zum Mitnehmen"></button>
-          <button class="gallery__tile gallery__tile--wide photo-slot reveal-scale" type="button" aria-label="Bild vergrößern"><img src="assets/photos/galerie-5.jpg" alt="Außenplätze vor der Espresso Perfetto Bar"></button>
-        </div>
+    <section class="visit" id="besuch" aria-labelledby="visit-h">
+      <div class="visit__info reveal">
+        <p class="kicker">Besuch</p>
+        <h2 id="visit-h">Espresso Perfetto Bar</h2>
+        <p class="visit__addr">Friedrichstraße 40a<br>40217 Düsseldorf</p>
+        <div class="status status--dark" data-status><span class="status__dot"></span><span data-status-text>Öffnungszeiten werden geladen</span></div>
+        <table class="hours">
+          <caption>Öffnungszeiten</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Montag</th><td>7:00 – 18:00</td></tr>
+            <tr data-day="2"><th scope="row">Dienstag</th><td>7:00 – 18:00</td></tr>
+            <tr data-day="3"><th scope="row">Mittwoch</th><td>7:00 – 18:00</td></tr>
+            <tr data-day="4"><th scope="row">Donnerstag</th><td>7:00 – 18:00</td></tr>
+            <tr data-day="5"><th scope="row">Freitag</th><td>7:00 – 18:00</td></tr>
+            <tr data-day="6"><th scope="row">Samstag</th><td>8:00 – 18:00</td></tr>
+            <tr data-day="0"><th scope="row">Sonntag</th><td>10:00 – 16:00</td></tr>
+          </tbody>
+        </table>
+        <a class="btn btn--paper" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">Route in Google Maps</a>
       </div>
-    </section>
-
-    <!-- BEWERTUNGEN -->
-    <section class="reviews" id="bewertungen" aria-labelledby="reviews-title">
-      <div class="reviews__inner">
-        <div class="reviews__summary reveal-left">
-          <span class="reviews__score">4,8</span>
-          <span class="reviews__stars" aria-hidden="true">★★★★★</span>
-          <p>von 5 Sternen · 459 Google-Bewertungen</p>
-        </div>
-        <div class="reviews__text reveal-right">
-          <span class="section-eyebrow">Bewertungen</span>
-          <h2 id="reviews-title">Gäste schätzen den Kaffee und das Team</h2>
-          <p>In den Google-Bewertungen loben Gäste vor allem den Espresso, die freundlichen Baristas, die saubere Bar und das gute Frühstück. Lies selbst nach, was andere schreiben.</p>
-          <a class="btn btn--outline" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">Bewertungen bei Google ansehen</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq" aria-labelledby="faq-title">
-      <div class="faq__inner">
-        <div class="faq__header reveal-item">
-          <span class="section-eyebrow">Häufige Fragen</span>
-          <h2 class="section-title" id="faq-title">Gut zu wissen</h2>
-        </div>
-        <div class="faq__list">
-          <div class="faq__item reveal-item">
-            <button class="faq__question" type="button" aria-expanded="false">Muss ich einen Tisch reservieren? <span class="faq__icon" aria-hidden="true"></span></button>
-            <div class="faq__answer"><p>Nein, Reservierungen nimmt die Bar nicht an. Komm einfach vorbei, ein Platz findet sich meistens.</p></div>
-          </div>
-          <div class="faq__item reveal-item">
-            <button class="faq__question" type="button" aria-expanded="false">Gibt es WLAN und kann ich hier arbeiten? <span class="faq__icon" aria-hidden="true"></span></button>
-            <div class="faq__answer"><p>Ja, es gibt kostenloses WLAN. Viele Gäste nutzen die Bar mit Laptop für ein, zwei Stunden konzentriertes Arbeiten bei einem Kaffee.</p></div>
-          </div>
-          <div class="faq__item reveal-item">
-            <button class="faq__question" type="button" aria-expanded="false">Sind Hunde erlaubt? <span class="faq__icon" aria-hidden="true"></span></button>
-            <div class="faq__answer"><p>Ja, Hunde sind willkommen.</p></div>
-          </div>
-          <div class="faq__item reveal-item">
-            <button class="faq__question" type="button" aria-expanded="false">Kann ich draußen sitzen oder alles mitnehmen? <span class="faq__icon" aria-hidden="true"></span></button>
-            <div class="faq__answer"><p>Beides geht: Es gibt Sitzplätze drinnen und draußen, außerdem kannst du Getränke und Gebäck zum Mitnehmen bestellen.</p></div>
-          </div>
-          <div class="faq__item reveal-item">
-            <button class="faq__question" type="button" aria-expanded="false">Gibt es vegetarische Optionen? <span class="faq__icon" aria-hidden="true"></span></button>
-            <div class="faq__answer"><p>Ja, die Auswahl an vegetarischen Gerichten ist groß. Frag an der Theke nach dem Tagesangebot.</p></div>
-          </div>
-          <div class="faq__item reveal-item">
-            <button class="faq__question" type="button" aria-expanded="false">Wann hat die Bar geöffnet? <span class="faq__icon" aria-hidden="true"></span></button>
-            <div class="faq__answer"><p>Montag bis Freitag von 7 bis 18 Uhr, samstags von 8 bis 18 Uhr und sonntags von 10 bis 16 Uhr.</p></div>
+      <div class="map reveal">
+        <div class="map__consent">
+          <p class="map__title">Karte laden</p>
+          <p>Zum Schutz deiner Daten wird die Karte erst nach deinem Klick geladen. Dabei werden Daten (u. a. deine IP-Adresse) an Google übertragen, auch in die USA. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+          <div class="map__actions">
+            <button class="btn btn--solid" type="button" data-load-map="Espresso Perfetto Bar, Friedrichstraße 40a, 40217 Düsseldorf">Karte laden</button>
+            <a class="btn btn--line-light" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">In Google Maps öffnen</a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- KONTAKT -->
-    <section class="contact" id="kontakt" aria-labelledby="contact-title">
-      <div class="contact__inner">
-        <div class="reveal-left">
-          <span class="section-eyebrow">Kontakt &amp; Öffnungszeiten</span>
-          <h2 class="section-title" id="contact-title">Espresso Perfetto Bar</h2>
-          <dl class="contact__list">
-            <div><dt>Adresse</dt><dd>Friedrichstraße 40a<br>40217 Düsseldorf</dd></div>
-            <div><dt>Angebot</dt><dd>Vor Ort genießen · Zum Mitnehmen</dd></div>
-          </dl>
-          <table class="hours-table">
-            <caption>Öffnungszeiten</caption>
-            <tbody>
-              <tr data-day="1"><th scope="row">Montag</th><td>7:00 – 18:00 Uhr</td></tr>
-              <tr data-day="2"><th scope="row">Dienstag</th><td>7:00 – 18:00 Uhr</td></tr>
-              <tr data-day="3"><th scope="row">Mittwoch</th><td>7:00 – 18:00 Uhr</td></tr>
-              <tr data-day="4"><th scope="row">Donnerstag</th><td>7:00 – 18:00 Uhr</td></tr>
-              <tr data-day="5"><th scope="row">Freitag</th><td>7:00 – 18:00 Uhr</td></tr>
-              <tr data-day="6"><th scope="row">Samstag</th><td>8:00 – 18:00 Uhr</td></tr>
-              <tr data-day="0"><th scope="row">Sonntag</th><td>10:00 – 16:00 Uhr</td></tr>
-            </tbody>
-          </table>
-          <div style="margin-top: var(--size-6)">
-            <a class="btn btn--primary" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">Route in Google Maps</a>
-          </div>
-        </div>
-        <div class="contact__map reveal-right">
-          <div class="map-consent">
-            <svg class="map-consent__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <p class="map-consent__title">Karte laden</p>
-            <p class="map-consent__text">Zum Schutz deiner Daten wird die Karte erst nach deinem Klick geladen. Dabei werden Daten (u. a. deine IP-Adresse) an Google übertragen, auch in die USA. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-            <div class="map-consent__actions">
-              <button class="btn btn--primary" type="button" data-load-map="Espresso Perfetto Bar, Friedrichstraße 40a, 40217 Düsseldorf">Karte laden</button>
-              <a class="btn btn--outline" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">In Google Maps öffnen</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__brand">
-        <p class="footer__logo">Espresso <span>Perfetto</span> Bar</p>
-        <p>Friedrichstraße 40a, 40217 Düsseldorf</p>
-        <p>Mo–Fr 7–18 Uhr · Sa 8–18 Uhr · So 10–16 Uhr</p>
-      </div>
-      <nav class="footer__links" aria-label="Seitenmenü">
-        <a href="#angebot">Kaffee &amp; Essen</a>
-        <a href="#impressionen">Impressionen</a>
-        <a href="#faq">Gut zu wissen</a>
-        <a href="#kontakt">Kontakt &amp; Öffnungszeiten</a>
-      </nav>
-      <nav class="footer__legal" aria-label="Rechtliches">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </nav>
+    <div class="footer__in">
+      <p class="footer__logo">Espresso <b>Perfetto</b> Bar</p>
+      <p>Friedrichstraße 40a, 40217 Düsseldorf<br>Mo–Fr 7–18 Uhr · Sa 8–18 Uhr · So 10–16 Uhr</p>
+      <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
     </div>
-    <!-- PROBE-HINWEIS: mit der Probe-Leiste oben entfernen -->
-    <p class="footer__probe">Entwurf erstellt von Nexuzo, Düsseldorf. Alle Angaben ohne Gewähr, bis der Inhaber sie bestätigt hat.</p>
+    <!-- PROBE-HINWEIS: mit der Leiste oben entfernen -->
+    <p class="footer__note">Entwurf von Nexuzo, Düsseldorf. Alle Angaben ohne Gewähr, bis der Inhaber sie bestätigt hat. Platzhalterfotos: Unsplash.</p>
   </footer>
 
-  <button class="back-to-top" type="button" aria-label="Nach oben" hidden>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </button>
-
-  <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Bildansicht">
-    <div class="lightbox__backdrop"></div>
-    <div class="lightbox__panel">
-      <img class="lightbox__media" src="" alt="">
-      <p class="lightbox__caption"></p>
-      <button class="lightbox__close" type="button" aria-label="Schließen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    </div>
+  <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Bild vergrößert">
+    <button class="lightbox__close" type="button" aria-label="Schließen">Schließen</button>
+    <img src="" alt="">
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
