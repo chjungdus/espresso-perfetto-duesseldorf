@@ -13,7 +13,7 @@ Eigenständiges Projekt. Ein Claude-Code-Chat pro Website: In diesem Chat geht e
 
 ## Stil (Redesign Oktober 2026)
 
-Editorial: cremefarbenes Papier, Serifenschrift (Systemschriften), Logo mittig in der Navigation, geteilter Hero, Laufband, Speisekarte im Kartenlayout, horizontaler Bildstreifen, Italien-Dreiklang Grün/Creme/Rot. Bewusst anders als Kiosk Erbil und frittenliebe-bilk.de.
+Editorial: helles Marmorgrau, Serifenschrift (Systemschriften), Logo mittig in der Navigation, geteilter Hero, Laufband, Speisekarte im Kartenlayout, horizontaler Bildstreifen, Italien-Dreiklang Grün/Weiß/Rot. Bewusst anders als Kiosk Erbil und frittenliebe-bilk.de.
 
 - Farben und Schriften stehen oben in `style.css` (`:root`). Keine Webfonts, nur Systemschriften.
 - Mateo wollte ausdrücklich eigenständige Designs, nicht die Vorlage von frittenliebe-bilk.de kopieren.
@@ -36,7 +36,6 @@ Platzhalter von Unsplash, direkt per URL in `index.html` eingebunden. Echte Foto
 
 - Telefonnummer und Instagram-Name vom Inhaber holen (nicht erfunden, deshalb noch nicht auf der Seite)
 - Preise der Karte eintragen (HTML-Kommentar „PREISE EINTRAGEN" in `index.html`)
-- Satz „seit 1999" im Über-uns-Text mit dem Inhaber abstimmen
 - Impressum und Datenschutz: Platzhalter (gelb markiert) ausfüllen, rechtlich prüfen lassen
 - Probe-Leiste und Footer-Hinweis entfernen, sobald der Kunde die Seite übernimmt (HTML-Kommentare „PROBE-HINWEIS")
 
