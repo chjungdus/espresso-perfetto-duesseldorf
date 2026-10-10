@@ -33,7 +33,7 @@
     else { for (var i = 1; i <= 7; i++) { var n = (now.day + i) % 7; if (HOURS[n]) { text = 'Gerade zu · öffnet ' + (i === 1 ? 'morgen' : DAYS[n]) + ' um ' + fmt(HOURS[n][0]) + ' Uhr'; next = (i === 1 ? 'morgen ' : DAYS[n] + ' ') + 'ab ' + fmt(HOURS[n][0]) + ' Uhr'; break; } } }
     $$('[data-status]').forEach(function (el) { el.classList.toggle('is-open', open); el.classList.toggle('is-closed', !open); var tx = $('[data-status-text]', el); if (tx) tx.textContent = text; });
     $$('[data-status-short]').forEach(function (el) { el.textContent = (open ? 'Offen ' : 'Zu · ') + next; });
-    $$('[data-day]').forEach(function (r) { r.classList.toggle('is-today', parseInt(r.getAttribute('data-day'), 10) === now.day); });
+    $$('[data-day]').forEach(function (r) { var t = parseInt(r.getAttribute('data-day'), 10) === now.day; r.classList.toggle('is-today', t); if (t) r.setAttribute('aria-current', 'date'); else r.removeAttribute('aria-current'); });
   }
   status(); setInterval(status, 60000);
 
@@ -53,7 +53,7 @@
     });
     function close() { lb.hidden = true; lbImg.src = ''; if (last) last.focus(); }
     lb.addEventListener('click', function (e) { if (e.target === lb || e.target.closest('.lightbox__close')) close(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) close(); });
+    document.addEventListener('keydown', function (e) { if (lb.hidden) return; if (e.key === 'Escape') close(); if (e.key === 'Tab') { e.preventDefault(); $('.lightbox__close', lb).focus(); } });
   }
 
   /* Karte erst nach Klick (Zwei-Klick-Lösung, DSGVO) */
