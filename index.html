@@ -11,7 +11,7 @@
   <meta property="og:title" content="Espresso Perfetto Bar – Düsseldorf-Friedrichstadt">
   <meta property="og:description" content="Espresso, Frühstück und Kuchen an der Friedrichstraße 40a. Täglich geöffnet.">
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,7 +38,7 @@
   <header class="nav">
     <div class="nav__bar">
       <nav class="nav__side nav__side--l" aria-label="Hauptmenü links">
-        <a href="#bar">Die Bar</a><a href="#karte">Karte</a><a href="#bilder">Bilder</a>
+        <a href="#bar">Die Bar</a><a href="#karte">Karte</a><a href="#kaffee">Kaffee</a>
       </nav>
       <a class="logo" href="#top" aria-label="Espresso Perfetto Bar – Startseite"><span>Espresso</span><b>Perfetto</b><small>Bar, Düsseldorf</small></a>
       <nav class="nav__side nav__side--r" aria-label="Hauptmenü rechts">
@@ -58,7 +58,7 @@
         <h1 id="h1">Un caffè,<br>per favore.</h1>
         <p class="hero__lead">Italienisch geprägter Espresso, Frühstück bis in den Nachmittag und Cannoli zum Dessert. Zum Bleiben oder Mitnehmen.</p>
         <div class="hero__row">
-          <div class="status" data-status><span class="status__dot"></span><span data-status-text>Öffnungszeiten werden geladen</span></div>
+          <div class="status" data-status><span data-status-text>Öffnungszeiten werden geladen</span></div>
           <p class="rating"><b>4,8</b> bei Google, 459 Bewertungen</p>
         </div>
         <div class="hero__cta">
@@ -92,6 +92,16 @@
       </div>
     </section>
 
+    <section class="split" id="fruehstueck" aria-labelledby="bf-h">
+      <img src="https://images.unsplash.com/photo-1528699633788-424224dc89b5?auto=format&fit=crop&w=1000&h=1100&q=70" alt="Frühstückstisch mit Croissant, Kaffee und Obst" loading="lazy" width="1000" height="1100">
+      <div class="split__text">
+        <h2 id="bf-h">Frühstück und Brunch</h2>
+        <p>Montags bis freitags öffnet die Bar um sieben Uhr, samstags um acht, sonntags um zehn. Wer früh kommt, bekommt zum Espresso Frühstück. Wer später kommt, bleibt für den Brunch.</p>
+        <p>Auf der Karte stehen Quiche, Sandwiches mit Käse und eine große Auswahl an vegetarischen Gerichten. Was an dem Tag genau angeboten wird, steht an der Theke.</p>
+        <p>Alles gibt es auch zum Mitnehmen, falls es schnell gehen muss.</p>
+      </div>
+    </section>
+
     <section class="menu" id="karte" aria-labelledby="menu-h">
       <div class="menu__head">
         <p class="kicker">Die Karte</p>
@@ -114,9 +124,31 @@
         </div>
       </div>
       <p class="menu__note">Informationen zu Allergenen und Zusatzstoffen gibt es an der Theke. Änderungen am Angebot vorbehalten.</p>
-      <div class="menu__band">
-        <img src="https://images.unsplash.com/photo-1611292984550-6dd8def2e668?auto=format&fit=crop&w=900&h=600&q=70" alt="Cannoli mit Pistaziencreme" loading="lazy" width="900" height="600">
-        <img src="https://images.unsplash.com/photo-1654870032519-9db00597cd78?auto=format&fit=crop&w=900&h=600&q=70" alt="Cannoli mit Himbeeren" loading="lazy" width="900" height="600">
+    </section>
+
+    <section class="guide" id="kaffee" aria-labelledby="guide-h">
+      <div class="guide__in">
+        <div class="guide__head">
+          <h2 id="guide-h">Kleines Kaffee-ABC</h2>
+          <p>Italienische Kaffeekarten sind kurz, die Namen aber nicht immer selbsterklärend. Das hier sind die Klassiker, wie sie allgemein zubereitet werden.</p>
+        </div>
+        <dl class="guide__list">
+          <div><dt>Espresso</dt><dd>Ein kleiner, kräftiger Kaffee, der mit Druck durch fein gemahlenes Kaffeemehl gepresst wird. Die Basis von fast allem anderen.</dd></div>
+          <div><dt>Espresso Macchiato</dt><dd>Ein Espresso mit einem Klecks Milchschaum obendrauf. Macchiato heißt „gefleckt“.</dd></div>
+          <div><dt>Cappuccino</dt><dd>Espresso, heiße Milch und Milchschaum, in etwa zu gleichen Teilen. Wird in Italien klassisch am Vormittag getrunken.</dd></div>
+          <div><dt>Latte Macchiato</dt><dd>Viel warme Milch im hohen Glas, der Espresso kommt von oben dazu. Milder und größer als der Cappuccino.</dd></div>
+          <div><dt>Matcha Latte</dt><dd>Grüner Matcha-Tee mit Milch. In der Bar gibt es ihn mit Erdbeersirup.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="split split--rev" id="suesses" aria-labelledby="sw-h">
+      <img src="https://images.unsplash.com/photo-1611292984550-6dd8def2e668?auto=format&fit=crop&w=1000&h=1100&q=70" alt="Cannoli mit Pistaziencreme" loading="lazy" width="1000" height="1100">
+      <div class="split__text">
+        <h2 id="sw-h">Cannoli, Kuchen und Nussriegel</h2>
+        <p>Cannoli stammen ursprünglich aus Sizilien: knusprige Teigröllchen mit süßer Füllung. In der Bar gehören sie zum Kaffee wie der Zucker.</p>
+        <p>Dazu gibt es hausgemachten Kuchen und Nussriegel für den kleinen Hunger zwischendurch.</p>
+        <p>Und wenn dir der Kaffee so gut schmeckt, dass du ihn zu Hause haben willst: Kaffeebohnen gibt es zum Mitnehmen.</p>
       </div>
     </section>
 
@@ -138,7 +170,8 @@
       <div class="score__num"><span>4,8</span><small>von 5 Sternen</small></div>
       <div class="score__text">
         <h2 id="score-h">459 Gäste haben bei Google bewertet</h2>
-        <p>Gelobt werden vor allem der Espresso, die freundlichen Baristas, die saubere Bar und das Frühstück. Lies selbst nach, was andere schreiben.</p>
+        <p>Gelobt werden vor allem diese Dinge. Lies selbst nach, was andere schreiben.</p>
+        <ul class="praise"><li>Der Espresso</li><li>Die freundlichen Baristas</li><li>Die saubere Bar</li><li>Das Frühstück</li></ul>
         <a class="btn btn--paper" href="https://maps.google.com/maps?cid=6343381354609917483" target="_blank" rel="noopener">Bewertungen bei Google ansehen</a>
       </div>
     </section>
@@ -151,6 +184,9 @@
         <div><dt>Hunde</dt><dd>Hunde sind willkommen.</dd></div>
         <div><dt>Sitzen</dt><dd>Plätze drinnen und draußen. Alles gibt es auch zum Mitnehmen.</dd></div>
         <div><dt>Vegetarisch</dt><dd>Große Auswahl an vegetarischen Gerichten. Frag an der Theke nach dem Tagesangebot.</dd></div>
+        <div><dt>Kaffeebohnen</dt><dd>Gibt es zum Mitnehmen. Lass dich an der Theke beraten.</dd></div>
+        <div><dt>Allergene</dt><dd>Informationen zu Allergenen und Zusatzstoffen bekommst du an der Theke.</dd></div>
+        <div><dt>Öffnungszeiten</dt><dd>Montag bis Freitag 7 bis 18 Uhr, Samstag 8 bis 18 Uhr, Sonntag 10 bis 16 Uhr.</dd></div>
       </dl>
     </section>
 
@@ -159,7 +195,7 @@
         <p class="kicker">Besuch</p>
         <h2 id="visit-h">Espresso Perfetto Bar</h2>
         <p class="visit__addr">Friedrichstraße 40a<br>40217 Düsseldorf</p>
-        <div class="status status--dark" data-status><span class="status__dot"></span><span data-status-text>Öffnungszeiten werden geladen</span></div>
+        <div class="status status--dark" data-status><span data-status-text>Öffnungszeiten werden geladen</span></div>
         <table class="hours">
           <caption>Öffnungszeiten</caption>
           <tbody>

@@ -62,7 +62,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero__photo { margin: 0; position: relative; background: var(--ink); min-height: 420px; }
 .hero__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero__photo::after { content: ""; position: absolute; inset: 18px; border: 1px solid rgba(251, 246, 234, .55); pointer-events: none; }
-.hero__photo figcaption { position: absolute; left: 34px; bottom: 30px; z-index: 1; color: var(--cream); font-family: var(--serif); font-style: italic; font-size: 1.05rem; text-shadow: 0 1px 8px rgba(0, 0, 0, .6); }
+.hero__photo figcaption { position: absolute; left: 34px; bottom: 30px; z-index: 1; color: var(--cream); font-family: var(--sans); font-size: .95rem; text-shadow: 0 1px 8px rgba(0, 0, 0, .6); }
 
 .status { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; font-size: .9rem; font-weight: 600; background: var(--cream); }
 .status__dot { width: 10px; height: 10px; border-radius: 50%; background: #999; flex: none; }
@@ -83,7 +83,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Laufband */
 .ticker { background: var(--red); color: var(--cream); overflow: hidden; border-block: 3px solid var(--ink); }
 .ticker__track { display: flex; width: max-content; animation: tick 40s linear infinite; }
-.ticker span { font-family: var(--serif); font-style: italic; font-size: 1.4rem; padding: 12px 0; white-space: nowrap; }
+.ticker span { font-family: var(--serif); font-size: 1.4rem; padding: 12px 0; white-space: nowrap; }
 .ticker span::after { content: ""; display: inline-block; width: 40px; height: 1px; background: currentColor; opacity: .6; margin: 0 28px; vertical-align: middle; }
 @keyframes tick { to { transform: translateX(-50%); } }
 
@@ -105,7 +105,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .card__col { padding: 44px 40px; }
 .card__col + .card__col { border-left: 1px dashed var(--line); }
 .card h3 { margin-bottom: 22px; }
-.card h3 span { display: block; font-size: 1.9rem; font-style: italic; color: var(--green); }
+.card h3 span { display: block; font-size: 1.9rem; color: var(--green); }
 .card h3 small { font: 600 .95rem var(--sans); color: var(--ink-soft); }
 .card li { padding: 11px 0; border-bottom: 1px dotted var(--line); font-size: 1.05rem; }
 .card li:last-child { border-bottom: 0; }
@@ -128,7 +128,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Bewertung */
 .score { background: var(--green); color: var(--cream); display: grid; grid-template-columns: auto 1fr; gap: clamp(32px, 7vw, 110px); align-items: center; padding: clamp(56px, 8vw, 100px) var(--gut); }
 .score__num { justify-self: end; }
-.score__num span { display: block; font-family: var(--serif); font-size: clamp(6rem, 17vw, 13rem); line-height: .85; font-style: italic; }
+.score__num span { display: block; font-family: var(--serif); font-size: clamp(6rem, 17vw, 13rem); line-height: .85; }
 .score__num small { font-size: 1rem; }
 .score__text { max-width: 36em; }
 .score h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin-bottom: 16px; }
@@ -139,7 +139,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .know h2 { font-size: clamp(2.2rem, 4.4vw, 3.6rem); align-self: start; position: sticky; top: 120px; }
 .know__list > div { display: grid; grid-template-columns: 9.5em 1fr; gap: 24px; padding: 22px 0; border-top: 1px solid var(--ink); }
 .know__list > div:last-child { border-bottom: 1px solid var(--ink); }
-.know dt { font-family: var(--serif); font-size: 1.4rem; font-style: italic; color: var(--green); }
+.know dt { font-family: var(--serif); font-size: 1.4rem; color: var(--green); }
 .know dd { margin: 0; }
 
 /* Besuch */
@@ -222,4 +222,40 @@ ul { margin: 0; padding: 0; list-style: none; }
   html { scroll-behavior: auto; }
   .ticker__track { animation: none; }
   .hero__copy > * { animation: none; }
+}
+
+/* Status ohne Farbpunkt */
+.status__dot { display: none; }
+.status { padding: 8px 18px; }
+
+/* Bild und Text im Wechsel */
+.split { display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
+.split img { width: 100%; height: 100%; min-height: 360px; object-fit: cover; }
+.split__text { padding: clamp(40px, 7vw, 100px) var(--gut); align-self: center; max-width: 640px; }
+.split h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 24px; }
+.split--rev img { order: 2; }
+.split--rev .split__text { justify-self: end; }
+.split--rev { background: var(--paper-2); }
+
+/* Kaffee-ABC */
+.guide { padding: clamp(64px, 9vw, 120px) var(--gut); }
+.guide__in { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: .8fr 1.4fr; gap: clamp(32px, 6vw, 96px); }
+.guide h2 { font-size: clamp(2.2rem, 4.4vw, 3.6rem); margin-bottom: 18px; }
+.guide__head p { color: var(--ink-soft); }
+.guide__list > div { display: grid; grid-template-columns: 11em 1fr; gap: 24px; padding: 24px 0; border-top: 1px solid var(--ink); }
+.guide__list > div:last-child { border-bottom: 1px solid var(--ink); }
+.guide dt { font-family: var(--serif); font-size: 1.35rem; color: var(--green); }
+.guide dd { margin: 0; }
+
+.praise { display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 0 0 24px; }
+.praise li { border: 1px solid rgba(250, 250, 247, .5); padding: 6px 14px; border-radius: 4px; }
+
+@media (max-width: 960px) {
+  .split { grid-template-columns: 1fr; }
+  .split--rev img { order: 0; }
+  .split__text, .split--rev .split__text { justify-self: stretch; max-width: none; }
+  .guide__in { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .guide__list > div { grid-template-columns: 1fr; gap: 4px; }
 }
