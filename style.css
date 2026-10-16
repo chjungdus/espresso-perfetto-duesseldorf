@@ -380,3 +380,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .illo, .illo--bean { color: var(--gold); }
 .know__list > div, .guide__list > div { border-top-color: var(--gold-dark); }
 .home__art img { box-shadow: 10px 10px 0 var(--gold); }
+.visit .kicker { color: var(--gold-light); }
+.visit .btn--paper { background: var(--gold); color: var(--ink); }
+.map { background: #141214; }
