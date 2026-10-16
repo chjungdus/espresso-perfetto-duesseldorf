@@ -286,3 +286,60 @@ ul { margin: 0; padding: 0; list-style: none; }
   .home__in { grid-template-columns: 1fr; }
   .illo--moka { width: 150px; }
 }
+
+/* ===== Farbwelt nach den Fotos der Bar (Oktober 2026) =====
+   Rosa Decke, schwarze Kreidetafel mit orangen Linien, weiße Wände, Holz und braunes Leder. */
+:root {
+  --paper: #fbf8f6;
+  --paper-2: #f7dfe4;
+  --ink: #1d1b1d;
+  --ink-soft: #5a4e51;
+  --green: #a9441a;   /* Akzent für Text: dunkles Orange, kontraststark */
+  --red: #ec8fa3;     /* Rosa der Decke */
+  --pink: #ec8fa3;
+  --orange: #e8692b;  /* Linien der Tafel */
+  --wood: #b98352;
+  --cream: #ffffff;
+  --line: rgba(29, 27, 29, .18);
+}
+.nav { border-bottom: 4px solid var(--pink); }
+.logo span, .logo b { font-family: "Bahnschrift", "Arial Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif; font-stretch: condensed; font-weight: 700; font-style: normal; color: var(--ink); }
+.logo span { font-size: 1.1rem; letter-spacing: .02em; }
+.logo b { font-size: 2rem; letter-spacing: .01em; }
+.logo small { font-family: var(--serif); font-style: italic; font-size: .85rem; }
+.topbar a { color: var(--pink); }
+.ticker { background: var(--pink); color: var(--ink); border-block-color: var(--ink); }
+.btn--solid { background: var(--ink); color: #fff; }
+.btn--solid:hover { background: var(--green); }
+.btn--line:hover { background: var(--ink); color: #fff; }
+.illo--bean { color: var(--orange); }
+.about__b { aspect-ratio: 4 / 5; width: 44%; }
+
+/* Karte im Stil der Tafel */
+.menu { background: var(--paper); }
+.card { background: var(--ink); color: #fff; border-color: var(--ink); outline-color: var(--orange); grid-template-columns: 1.25fr 1fr 1fr; }
+.card__col + .card__col { border-left: 2px solid var(--orange); }
+.card h3 { border-bottom: 2px solid var(--orange); padding-bottom: 12px; }
+.card h3 span { color: #fff; font-family: "Bahnschrift", "Arial Narrow", "Roboto Condensed", Arial, sans-serif; font-stretch: condensed; font-weight: 700; }
+.card h3 small { color: rgba(255, 255, 255, .72); }
+.card li { border-bottom-color: rgba(255, 255, 255, .2); }
+.prices li { display: grid; grid-template-columns: 1fr 3.4em 3.4em; gap: 8px; align-items: baseline; }
+.prices--one li { grid-template-columns: 1fr 3.6em; }
+.prices .p, .card__cols span { text-align: right; font-variant-numeric: tabular-nums; }
+.card__cols { display: grid; grid-template-columns: 1fr 3.4em 3.4em; gap: 8px; margin: -8px 0 0; font-size: .8rem; color: rgba(255, 255, 255, .72); }
+.card__cols::before { content: ""; }
+.menu__note { color: var(--ink-soft); }
+
+.score { background: var(--pink); color: var(--ink); }
+.score .btn--paper { background: var(--ink); color: #fff; }
+.praise li { border-color: rgba(29, 27, 29, .45); }
+.split--rev { background: var(--paper-2); }
+.home { background: #fff; }
+.home__art img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
+.hours tr.is-today th, .hours tr.is-today td { color: var(--pink); }
+.map__actions .btn--solid { background: var(--pink); color: var(--ink); }
+.map__consent a, .footer__logo b { color: var(--pink); }
+@media (max-width: 960px) {
+  .card { grid-template-columns: 1fr; }
+  .card__col + .card__col { border-left: 0; border-top: 2px solid var(--orange); }
+}
