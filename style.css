@@ -383,3 +383,18 @@ ul { margin: 0; padding: 0; list-style: none; }
 .visit .kicker { color: var(--gold-light); }
 .visit .btn--paper { background: var(--gold); color: var(--ink); }
 .map { background: #141214; }
+
+/* ===== Gold vor Rosa (Wunsch von Mateo, 16.10.2026) =====
+   Gold ist jetzt die Hauptfarbe für Flächen, Rosa nur noch als feiner Akzent. */
+:root { --paper-2: #f4ead3; }
+.nav { border-bottom: 4px solid var(--gold); box-shadow: none; }
+.topbar { border-bottom: 3px solid var(--pink); }
+.ticker { background: var(--gold); color: var(--ink); border-block: 3px solid var(--ink); }
+.ticker span::after { background: var(--ink); opacity: .5; }
+.score { background: linear-gradient(135deg, #b8902f 0%, var(--gold) 45%, var(--gold-light) 100%); color: var(--ink); }
+.score__num span { text-shadow: 3px 3px 0 rgba(255, 255, 255, .35); }
+.praise li { border-color: rgba(29, 27, 29, .5); }
+.split--rev { background: var(--paper-2); }
+.home__art img { box-shadow: 10px 10px 0 var(--pink); }
+.strip__track { scrollbar-color: var(--gold) transparent; }
+.status { border-color: var(--gold); }
