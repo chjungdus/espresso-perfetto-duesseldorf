@@ -343,3 +343,40 @@ ul { margin: 0; padding: 0; list-style: none; }
   .card { grid-template-columns: 1fr; }
   .card__col + .card__col { border-left: 0; border-top: 2px solid var(--orange); }
 }
+
+/* ===== Gold-Akzente (Wunsch von Mateo, 16.10.2026) =====
+   Abgeleitet von den goldenen Glühbirnen, dem Holzschild und den goldenen Kaffeetüten in der Bar.
+   Helles Gold nur auf Schwarz und Rosa, dunkles Gold für Text auf hellem Grund. */
+:root {
+  --gold: #c9a24a;
+  --gold-light: #e3c578;
+  --gold-dark: #7d5f17;
+  --orange: var(--gold);
+  --green: var(--gold-dark);
+}
+.topbar { border-bottom: 2px solid var(--gold); }
+.topbar a, .footer__logo b, .map__consent a { color: var(--gold-light); }
+.nav { border-bottom: 4px solid var(--pink); box-shadow: 0 1px 0 var(--gold) inset, 0 4px 0 -2px var(--gold); }
+.logo small { color: var(--gold-dark); }
+.ticker { border-block: 3px solid var(--gold); }
+.ticker span::after { background: var(--gold-dark); opacity: 1; }
+.btn--solid { background: var(--ink); color: var(--gold-light); box-shadow: inset 0 0 0 2px var(--gold); }
+.btn--solid:hover { background: var(--gold); color: var(--ink); }
+.btn--line { border-color: var(--gold-dark); }
+.hero__photo::after { border-color: rgba(227, 197, 120, .8); }
+.card { outline-color: var(--gold); }
+.card h3 { border-bottom-color: var(--gold); }
+.card h3 span, .prices .p { color: var(--gold-light); }
+.card__col + .card__col { border-color: var(--gold); }
+.score { background: var(--pink); }
+.score__num span { color: var(--ink); text-shadow: 3px 3px 0 var(--gold); }
+.score .btn--paper { background: var(--ink); color: var(--gold-light); }
+.visit { border-top: 4px solid var(--gold); }
+.visit h2 { color: var(--gold-light); }
+.hours tr.is-today th, .hours tr.is-today td { color: var(--gold-light); }
+.hours th, .hours td { border-top-color: rgba(227, 197, 120, .3); }
+.map__actions .btn--solid { background: var(--gold); color: var(--ink); box-shadow: none; }
+.footer { border-top: 2px solid var(--gold); }
+.illo, .illo--bean { color: var(--gold); }
+.know__list > div, .guide__list > div { border-top-color: var(--gold-dark); }
+.home__art img { box-shadow: 10px 10px 0 var(--gold); }
