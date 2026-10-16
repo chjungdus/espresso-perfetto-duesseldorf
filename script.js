@@ -28,11 +28,11 @@
   /* Öffnungsstatus */
   function status() {
     var now = berlinNow(), t = HOURS[now.day], open = false, text = '', next = '';
-    if (t && now.min >= toMin(t[0]) && now.min < toMin(t[1])) { open = true; text = 'Jetzt geöffnet · bis ' + fmt(t[1]) + ' Uhr'; next = 'bis ' + fmt(t[1]) + ' Uhr'; }
-    else if (t && now.min < toMin(t[0])) { text = 'Gerade zu · öffnet heute um ' + fmt(t[0]) + ' Uhr'; next = 'ab ' + fmt(t[0]) + ' Uhr'; }
-    else { for (var i = 1; i <= 7; i++) { var n = (now.day + i) % 7; if (HOURS[n]) { text = 'Gerade zu · öffnet ' + (i === 1 ? 'morgen' : DAYS[n]) + ' um ' + fmt(HOURS[n][0]) + ' Uhr'; next = (i === 1 ? 'morgen ' : DAYS[n] + ' ') + 'ab ' + fmt(HOURS[n][0]) + ' Uhr'; break; } } }
+    if (t && now.min >= toMin(t[0]) && now.min < toMin(t[1])) { open = true; text = 'Jetzt geöffnet bis ' + fmt(t[1]) + ' Uhr'; next = 'bis ' + fmt(t[1]) + ' Uhr'; }
+    else if (t && now.min < toMin(t[0])) { text = 'Gerade zu, öffnet heute um ' + fmt(t[0]) + ' Uhr'; next = 'ab ' + fmt(t[0]) + ' Uhr'; }
+    else { for (var i = 1; i <= 7; i++) { var n = (now.day + i) % 7; if (HOURS[n]) { text = 'Gerade zu, öffnet ' + (i === 1 ? 'morgen' : DAYS[n]) + ' um ' + fmt(HOURS[n][0]) + ' Uhr'; next = (i === 1 ? 'morgen ' : DAYS[n] + ' ') + 'ab ' + fmt(HOURS[n][0]) + ' Uhr'; break; } } }
     $$('[data-status]').forEach(function (el) { el.classList.toggle('is-open', open); el.classList.toggle('is-closed', !open); var tx = $('[data-status-text]', el); if (tx) tx.textContent = text; });
-    $$('[data-status-short]').forEach(function (el) { el.textContent = (open ? 'Offen ' : 'Zu · ') + next; });
+    $$('[data-status-short]').forEach(function (el) { el.textContent = (open ? 'Offen ' : 'Zu, ') + next; });
     $$('[data-day]').forEach(function (r) { var t = parseInt(r.getAttribute('data-day'), 10) === now.day; r.classList.toggle('is-today', t); if (t) r.setAttribute('aria-current', 'date'); else r.removeAttribute('aria-current'); });
   }
   status(); setInterval(status, 60000);
